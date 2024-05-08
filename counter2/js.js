@@ -1,8 +1,8 @@
 var createCounter = function(init) {
     let counter = init ; 
     return {
-        increment:()=>counter=counter+1,
-        decrement:()=>counter=counter-1,
+        increment:()=>counter+=1,
+        decrement:()=>counter-=1,
         reset:()=>counter=init,
     }
 };
